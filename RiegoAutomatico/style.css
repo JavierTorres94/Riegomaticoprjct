@@ -1,0 +1,38 @@
+/* Responsividad general */
+.logo {
+    max-width: 100px; /* Ajusta el tamaño del logo en dispositivos pequeños */
+    height: auto;
+}
+
+.nav-links a {
+    font-size: 1rem; /* Asegura que los textos de los enlaces sean legibles */
+}
+
+/* Ajuste del carrusel */
+.carousel-inner img {
+    max-height: 70vh; /* La altura se ajusta al 70% del alto de la pantalla visible */
+    object-fit: cover; /* Las imágenes se escalan para rellenar el espacio sin distorsionarse */
+    
+}
+
+.carousel-item img {
+    width: 100%;           /* Ocupa todo el ancho del contenedor */
+    height: 100%;          /* Ajusta la altura al contenedor */
+    object-fit: cover;     /* Escala la imagen para llenar el contenedor sin deformarse */
+}
+
+
+/* Texto y márgenes en pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-text {
+        padding: 0 15px;
+    }
+
+    h1.display-4 {
+        font-size: 2rem; /* Reduce el tamaño del título principal */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; /* Reduce ligeramente el texto de los enlaces */
+    }
+}
